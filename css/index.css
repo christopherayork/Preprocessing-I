@@ -189,6 +189,12 @@ h4 {
   justify-content: center;
   align-content: center;
   align-items: center;
+  margin: auto;
+}
+@media (min-width: 501px) {
+  #body-wrapper {
+    width: 80%;
+  }
 }
 #body-wrapper header {
   display: flex;
@@ -219,6 +225,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 @media (min-width: 501px) {
   #body-wrapper header nav #nav-wrapper {
@@ -249,6 +256,7 @@ h4 {
     border-top: 0 !important;
     order: 1;
     border-radius: 0;
+    max-width: 19%;
   }
 }
 @media (min-width: 501px) {
@@ -333,6 +341,11 @@ h4 {
   border-radius: 10px;
   margin: 1%;
 }
+@media (min-width: 801px) {
+  #body-wrapper main article section.content-main .point {
+    width: 47.5%;
+  }
+}
 #body-wrapper main article section.content-main .point:nth-child(2) {
   background: #333;
 }
@@ -342,10 +355,52 @@ h4 {
     border-bottom: 1px dotted #414141;
   }
 }
-@media (min-width: 801px) {
-  #body-wrapper main article section.content-main .point {
-    width: 47.5%;
-  }
+#body-wrapper main article section.content-main .point .table-preset {
+  width: 100%;
+  margin: 10px;
+  background: #47555e;
+  border-radius: 10px;
+}
+#body-wrapper main article section.content-main .point table#hobbies {
+  width: 100%;
+  margin: 10px;
+  background: #47555e;
+  border-radius: 10px;
+}
+#body-wrapper main article section.content-main .point table#hobbies tr {
+  border-top: 1px dotted #708796;
+  display: flex;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
+#body-wrapper main article section.content-main .point table#hobbies tr:first-child {
+  border: 0;
+}
+#body-wrapper main article section.content-main .point table#hobbies th {
+  font-size: 1.2rem;
+}
+#body-wrapper main article section.content-main .point table#hobbies th,
+#body-wrapper main article section.content-main .point table#hobbies td {
+  text-align: center;
+  padding: 10px;
+}
+#body-wrapper main article section.content-main .point table#work {
+  width: 100%;
+  margin: 10px;
+  background: #47555e;
+  border-radius: 10px;
+  padding: 10px;
+}
+#body-wrapper main article section.content-main .point table#work tr {
+  display: inherit;
+}
+#body-wrapper main article section.content-main .point table#work th {
+  font-size: 1.2rem;
+}
+#body-wrapper main article section.content-main .point table#work th,
+#body-wrapper main article section.content-main .point table#work td {
+  text-align: center;
+  padding: 10px;
 }
 #body-wrapper footer {
   background: #333;
@@ -369,27 +424,4 @@ h4 {
   border-radius: 10px;
   max-width: 100%;
   max-height: 300px;
-}
-table {
-  width: 100%;
-  margin: 10px;
-  background: #47555e;
-  border-radius: 10px;
-}
-table tr {
-  border-top: 1px dotted #708796;
-  display: flex;
-  align-content: space-evenly;
-  justify-content: space-evenly;
-}
-table tr:first-child {
-  border: 0;
-}
-table th {
-  font-size: 1.2rem;
-}
-table th,
-table td {
-  text-align: center;
-  padding: 10px;
 }
